@@ -1,0 +1,84 @@
+:root {
+  --bg: #1a1a1a;
+  --card: #282929;
+  --text: #e9eaec;
+  --muted: #bec0c2;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
+    Helvetica, Arial;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 16px;
+  height: 100%;
+  padding: 16px;
+}
+.panel {
+  background: var(--card);
+  border: 1px solid #4e4e4e;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+label {
+  font-size: 13px;
+  color: var(--muted);
+}
+input,
+button {
+  width: 100%;
+  padding: 6px 12px;
+  margin: 6px 0;
+  border-radius: 4px;
+  border: 1px solid #4e4e4e;
+  background: #444444;
+  color: var(--text);
+}
+button.primary {
+  background: #72798f;
+  border-color: #99999b;
+}
+button.ghost {
+  background: #72798f;
+  border-color: #99999b;
+}
+hr {
+  border: none;
+  border-top: 1px solid #4e4e4e;
+  margin: 12px 0;
+}
+.badge {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  border: 1px solid #4e4e4e;
+  color: #9fb0c3;
+}
+.flex {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+.checkbox {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}

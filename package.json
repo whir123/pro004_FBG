@@ -1,0 +1,47 @@
+{
+  "name": "my-synfrac",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "concurrently -k \"npm:serve\" \"npm:electron\"",
+    "serve": "vite",
+    "electron": "wait-on http://localhost:5173 && electron .",
+    "build": "vite build && electron-builder",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "electron": "31.7.7",
+    "three": "0.160.1",
+    "vue": "3.5.22"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.4",
+    "concurrently": "^9.2.1",
+    "electron-builder": "^24.13.3",
+    "vite": "^5.4.21",
+    "wait-on": "^7.2.0"
+  },
+  "build": {
+    "appId": "com.example.aupg",
+    "productName": "AUPG Fracture Generator",
+    "files": [
+      "dist/**",
+      "electron/**",
+      "package.json"
+    ],
+    "extraMetadata": {
+      "main": "electron/main.js"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  }
+}
