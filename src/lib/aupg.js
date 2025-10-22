@@ -249,7 +249,7 @@ function makeField(nx, ny, Lx, Ly, H, ax, ay, th, rng) {
 export function generateAUPG({
   nx = 512,
   ny = 512,
-  L = 0.1, // 正方域 (m)；分辨率建议 64/128/256/512/1024
+  L = 0.1, // 正方域 (m)；分辨率 64/128/256/512/1024
   D = 2.1, // 分形维数
   sigma = 0.001, // RMS 高度 (m)
   anisotropy = 1.0,

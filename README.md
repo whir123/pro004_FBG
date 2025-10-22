@@ -1,8 +1,27 @@
 ## my-synfrac
 
-- 初始化： 删除 `node_modules` 和 `package-lock.json` 后 `npm install`
-- 启动： `npm run dev`
-
+#### ✍🏻 简介
 - 仿照 https://homepages.see.leeds.ac.uk/~earpwjg/PG_EN/Software.htm SynFrac
 - 基于输入的分形维数、起幅度、画幅大小等参数生成粗糙基底面 并可以导出为stl文件
 - 可用于离散元、计算流体力学等数值模拟等
+
+#### 🚧 生产环境启动：
+- 若打包复制 删除 `node_modules` 和 `package-lock.json`
+- 初始化：`npm install`
+- 启动： `npm run dev`
+
+#### 📦 打包为桌面应用：
+- Windows 打包：
+  ```
+    # 1 产出前端静态文件 | 产物在 dist/ 下
+    npm run dist
+    # 2 用 electron-builder 打 win 包 | 产物在 release/ 下
+    npm run build:win
+  ```
+- MacOS 打包：
+  ```
+    # 1 产出前端静态文件
+    npm run dist
+    # 2 用 electron-builder 打 mac 包
+    npm run build:mac
+  ```

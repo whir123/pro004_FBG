@@ -55,9 +55,9 @@
       <div class="panel" style="padding:10px; margin:10px 0">
         <div class="flex" style="margin-top:10px">
           <!-- 调用 run() 生成一次基底面 -->
-          <button class="primary" @click="run">Proceed</button>
+          <button class="primary" @click="run">[ 生成结果 ]</button>
           <!-- 导出 Bottom 的 STL -->
-          <button class="ghost" @click="exportSTL">Save Result</button>
+          <button class="ghost" @click="exportSTL">[ 保存文件 ]</button>
           <!-- 显示分辨率、D、耗时等信息 -->
           <span class="badge">{{ info }}</span>
         </div>
@@ -88,7 +88,7 @@ const mismatchMM = ref(15)   // ML （mm）
 const transitionMM = ref(10) // TL （mm）
 const stdMM = ref(1.0) // σz (mm)
 const aniso = ref(1.0) // 各向异性 x相对于y
-const D = ref(2.1) // 分形维数
+const D = ref(2.5) // 分形维数
 const mfmax = ref(1.0) // 长波极限相关
 const mfmin = ref(0.0) // 短波极限相关
 
