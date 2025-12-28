@@ -2,7 +2,7 @@
   <!-- 最外层：两列 CSS Grid 布局：左列参数面板，右列预览 -->
   <div class="grid">
     <div class="panel">
-      <h2 style="margin:0 0 8px">分形维数粗糙面生成器</h2>
+      <h2 style="margin:0 0 8px">分形基底生成器</h2>
       <hr />
 
       <!-- 随机数发生器 | 单选组 + 两个种子 -->

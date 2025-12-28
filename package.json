@@ -1,7 +1,7 @@
 {
-  "name": "fdrsg",
+  "name": "fbg",
   "version": "0.2.0",
-  "description": "Fractal dimension rough surface generator",
+  "description": "FractalBaseGen(FBG)",
   "private": true,
   "type": "module",
   "author": "LZK <LZK@example.com>",
